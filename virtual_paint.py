@@ -5,7 +5,7 @@ import HandTrackerModule as htm
 import numpy as np
 import math
 import os
-import app
+import app1
 
 
 folder_path='static/paint_headers'
@@ -106,5 +106,5 @@ def paint_virtual():
             pass
     cap.release()
     cv.destroyAllWindows()
-    return app.home()
+    return app1.home()
 

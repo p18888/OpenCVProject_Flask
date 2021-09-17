@@ -4,7 +4,7 @@ import time
 import HandTrackerModule as htm
 import numpy as np
 import math
-import app
+import app1
 
 
 
@@ -82,4 +82,4 @@ def count_finger():
             pass
     cap.release()
     cv.destroyAllWindows()
-    return app.home()
+    return app1.home()

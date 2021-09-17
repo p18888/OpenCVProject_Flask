@@ -4,7 +4,7 @@ import time
 import PoseDetectionModule as pdm
 import numpy as np
 import math
-import app
+import app1
 
 def pushup_count():
     pTime=0
@@ -41,4 +41,4 @@ def pushup_count():
             pass
     cap.release()
     cv.destroyAllWindows()
-    return app.home()
+    return app1.home()
