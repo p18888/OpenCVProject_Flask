@@ -1,0 +1,155 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <style>
+    input[type=text] {
+    height:17px;
+    border: 0;
+    width: calc(100% - 2px);
+    margin-left:1px;
+    box-shadow: -8px 10px 0px -7px #ebebeb, 8px 10px 0px -7px #ebebeb;
+    -webkit-transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s;
+  }
+  input[type=text]:focus {
+    outline: none;
+    box-shadow: -8px 10px 0px -7px white, 8px 10px 0px -7px white;
+  }
+ /* .back{
+     background-color: white;
+ } */
+ .text{
+     color:white;
+     height:60;
+ }
+ .pre{
+    color:#39C0ED;
+    border-radius: 5px;
+    {% comment %} background-color: black; {% endcomment %}
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    {% comment %} border: none; {% endcomment %}
+    cursor:pointer;
+    overflow: hidden;  
+   
+ }
+ #center{
+     top: 230px;
+     left:350px;
+     
+ }
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 10%; 
+  min-height: 10%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+#videohome{
+    position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 50%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+
+    </style>
+    <title>Document</title>
+{% comment %} {%csrf_token %} {% endcomment %}
+
+</head>
+<body>
+<video autoplay muted loop id="videohome">
+  <source src="static/background2.mov" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+<form action='/.'>
+<form>
+</form>
+  <form action='/finger_counts'>
+    <div class="card"  style="top: 60; left: 100;">
+    <input type="image" src="static/hands.jpg" alt="Submit" style="width:100%">
+      <div class="container">
+        <h4><b>Count Your Fingers</b></h4> 
+        <p>Show Your Fingers</p>
+      </div>
+    </div>
+  </form>
+  <form action='/draw_virtual'>
+    <div class="card"  style="bottom: 60; left: 700;">
+    <input type="image" src="static/painting.jpg" alt="Submit" style="width:100%">
+    <div class="container" >
+      <h4><b>Virtual Painting</b></h4> 
+      <p>Fore Finger to draw & Fore Finger and Middle Finger to select</p> 
+    </div>
+    </div>
+  </form>
+  <form action='/personal_trainer'>
+    <div class="card"  style="bottom: 60; left: 100;">
+    <input type="image" src="static/gym1.jpg" alt="Submit" style="width:100%">
+    <div class="container" >
+      <h4><b>Push Up Count</b></h4> 
+      <p>Get Ready For Puch Ups</p> 
+    </div>
+    </div>
+  </form>
+</form>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+      
+</body>
+</html>
