@@ -13,7 +13,6 @@ matplotlib==3.4.3
 mediapipe==0.8.7.3
 numpy==1.20.3
 opencv-contrib-python==4.5.3.56
-python==3.8
 python-dateutil==2.8.1
 pytz==2021.1
 scikit-learn==0.24.2
@@ -24,4 +23,3 @@ typing-extensions==3.10.0.0
 Werkzeug==2.0.1
 wincertstore==0.2
 zipp==3.4.1
-
