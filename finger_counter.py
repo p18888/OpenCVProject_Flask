@@ -1,10 +1,7 @@
 import cv2 as cv
-import mediapipe as mp
 import time
 import HandTrackerModule as htm
-import numpy as np
-import math
-import app1
+import app
 
 
 
@@ -82,4 +79,4 @@ def count_finger():
             pass
     cap.release()
     cv.destroyAllWindows()
-    return app1.home()
+    return app.home()

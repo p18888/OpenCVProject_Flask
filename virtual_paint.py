@@ -1,11 +1,9 @@
 import cv2 as cv
-import mediapipe as mp
 import time
 import HandTrackerModule as htm
 import numpy as np
-import math
 import os
-import app1
+import app
 
 
 folder_path='static/paint_headers'
@@ -106,5 +104,5 @@ def paint_virtual():
             pass
     cap.release()
     cv.destroyAllWindows()
-    return app1.home()
+    return app.home()
 

@@ -1,10 +1,7 @@
 import cv2 as cv
-import mediapipe as mp
-import time
 import PoseDetectionModule as pdm
 import numpy as np
-import math
-import app1
+import app
 
 def pushup_count():
     pTime=0
@@ -41,4 +38,4 @@ def pushup_count():
             pass
     cap.release()
     cv.destroyAllWindows()
-    return app1.home()
+    return app.home()
