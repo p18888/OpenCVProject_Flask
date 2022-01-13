@@ -1,6 +1,8 @@
 from flask import Flask, render_template
 import virtual_paint
 import gym_trainer
+import zoom_filter
+import backgroud_effect
 app=Flask(__name__)
 
 import finger_counter
@@ -22,7 +24,15 @@ def draw_virtual():
 def personal_trainer():
     return gym_trainer.pushup_count()
 
+@app.route("/zoom_filter")
+def zoom_fltr():
+    return zoom_filter.image_zoom()
 
+
+
+@app.route("/change_background")
+def change_background():
+    return backgroud_effect.change_background()
 
 
 
